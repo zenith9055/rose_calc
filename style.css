@@ -1,0 +1,85 @@
+:root {
+  /* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+  --pink-color: #f7bacf;
+  --pink-light-color: #ffedff;
+  --pink-dark-color: #c38a9e;
+
+  /* Size */
+  --padding: 12px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-title: 32px;
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nanum Gothic";
+}
+
+header {
+  padding: var(--padding);
+  font-size: var(--font-title);
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--pink-color);
+}
+
+.tables {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pink-light-color);
+}
+
+.tables div {
+  display: flex;
+}
+
+.tables button {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pink-color);
+}
+
+.tables button .tbNumber {
+  width: 100%;
+  text-align: left;
+  padding-left: calc(var(--padding) / 2);
+  padding-top: calc(var(--padding) / 2);
+  padding-bottom: calc(var(--padding) / 2);
+  font-size: var(--font-large);
+  background-color: var(--pink-dark-color);
+}
+
+.tables button .contents {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.tables button .pay {
+  width: 100%;
+  padding-left: calc(var(--padding) / 2);
+  padding-top: calc(var(--padding) / 2);
+  padding-bottom: calc(var(--padding) / 2);
+  font-size: var(--font-medium);
+  background-color: var(--pink-dark-color);
+}
